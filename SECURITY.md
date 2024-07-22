@@ -10,7 +10,7 @@ If you discover a security vulnerability within this repository, please follow t
    - Click on the "Report a vulnerability" button in the repository.
    - Provide all necessary details about the vulnerability, including steps to reproduce and any potential impact.
 
-5. **Expected Response Time**: We will acknowledge the receipt of your email within 48 hours and will strive to provide a detailed response regarding the next steps within 7 days.
+5. **Expected Response Time**: We will strive to provide a detailed response regarding the next steps within 7 business days.
 
 6. **Handling of the Report**: We will keep you informed of the progress in resolving the issue. Once the vulnerability is patched, we will release a security update and credit you for your discovery, if you so wish.
 
