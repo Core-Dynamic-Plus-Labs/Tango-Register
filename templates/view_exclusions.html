@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Exclusions</title>
+</head>
+<body>
+    <h1>View Exclusions</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Street</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Reason</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Exclusion Authority</th>
+            <th>Notes</th>
+            <th>ID Type</th>
+            <th>ID Number</th>
+        </tr>
+        {% for exclusion in exclusions %}
+        <tr>
+            <td>{{ exclusion.id }}</td>
+            <td>{{ exclusion.name }}</td>
+            <td>{{ exclusion.date_of_birth }}</td>
+            <td>{{ exclusion.gender }}</td>
+            <td>{{ exclusion.street }}</td>
+            <td>{{ exclusion.city }}</td>
+            <td>{{ exclusion.state }}</td>
+            <td>{{ exclusion.zip }}</td>
+            <td>{{ exclusion.reason }}</td>
+            <td>{{ exclusion.start_date }}</td>
+            <td>{{ exclusion.end_date }}</td>
+            <td>{{ exclusion.exclusion_authority }}</td>
+            <td>{{ exclusion.notes }}</td>
+            <td>{{ exclusion.id_type }}</td>
+            <td>{{ exclusion.id_number }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
