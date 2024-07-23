@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Exclusion</title>
+</head>
+<body>
+    <h1>Add Exclusion</h1>
+    <form method="post" action="{{ url_for('add_exclusion_page') }}">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="date_of_birth">Date of Birth:</label><br>
+        <input type="date" id="date_of_birth" name="date_of_birth" required><br>
+        <label for="gender">Gender:</label><br>
+        <input type="text" id="gender" name="gender" required><br>
+        <label for="street">Street:</label><br>
+        <input type="text" id="street" name="street" required><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" required><br>
+        <label for="state">State:</label><br>
+        <input type="text" id="state" name="state" required><br>
+        <label for="zip">Zip:</label><br>
+        <input type="text" id="zip" name="zip" required><br>
+        <label for="reason">Reason:</label><br>
+        <input type="text" id="reason" name="reason" required><br>
+        <label for="start_date">Start Date:</label><br>
+        <input type="date" id="start_date" name="start_date" required><br>
+        <label for="end_date">End Date:</label><br>
+        <input type="date" id="end_date" name="end_date" required><br>
+        <label for="exclusion_authority">Exclusion Authority:</label><br>
+        <input type="text" id="exclusion_authority" name="exclusion_authority" required><br>
+        <label for="notes">Notes:</label><br>
+        <input type="text" id="notes" name="notes"><br>
+        <label for="id_type">ID Type:</label><br>
+        <input type="text" id="id_type" name="id_type" required><br>
+        <label for="id_number">ID Number:</label><br>
+        <input type="text" id="id_number" name="id_number" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
